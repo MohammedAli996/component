@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="mytree.css" />
+    <title>component</title>
+    <style>
+      /* Make the image fully responsive */
+      .carousel-inner img {
+        width: 100%;
+        height: 100%;
+      }
+      </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" tabindex="0"><img src="img/logo.png" alt="Logo"></a></li>
+                <li><a href="projecten.html">projecten</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Profiel</a></li>
+                <li><a href="#" >Inloggen</a></li>
+            </ul>
+        </nav>
+  </header>
+  <main>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="./img/nature1.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="./img/nature2.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="./img/nature3.jpg" style="width:100%">
+      </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</main>
+<main>
+  <section>
+      <center>
+          <div class="search-bar">
+              <input type="text" id="zoektekst" placeholder="Zoek Contacten" onkeyup="zoekContacten(document.getElementById('zoektekst').value)" />
+          </div>
+          <div id="grid">
+          </div>
+      </center>
+  </section>
+</main>
+<br>
+  <script src="js/javascript.js"></script>
+  <script src="js/search.js"></script>
+  </body>
+  </html>
